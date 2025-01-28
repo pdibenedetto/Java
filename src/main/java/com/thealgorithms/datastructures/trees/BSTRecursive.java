@@ -17,7 +17,7 @@ import com.thealgorithms.datastructures.trees.BinaryTree.Node;
  * I have made public functions as methods and to actually implement recursive
  * approach I have used private methods
  *
- * @author [Lakhan Nad](https://github.com/Lakhan-Nad)
+ * @author [Lakhan Nad](<a href="https://github.com/Lakhan-Nad">git-Lakhan Nad</a>)
  */
 public class BSTRecursive {
 
@@ -95,7 +95,7 @@ public class BSTRecursive {
     }
 
     /**
-     * Serach recursively if the given value is present in BST or not.
+     * Search recursively if the given value is present in BST or not.
      *
      * @param node the current node to check
      * @param data the value to be checked

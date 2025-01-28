@@ -30,7 +30,9 @@ import com.thealgorithms.datastructures.trees.BinaryTree.Node;
  *
  * @author kumanoit on 10/10/22 IST 12:52 AM
  */
-public class CheckTreeIsSymmetric {
+public final class CheckTreeIsSymmetric {
+    private CheckTreeIsSymmetric() {
+    }
 
     public static boolean isSymmetric(Node root) {
         if (root == null) {
@@ -39,16 +41,16 @@ public class CheckTreeIsSymmetric {
         return isSymmetric(root.left, root.right);
     }
 
-    private static boolean isSymmetric(Node leftSubtreeRoot, Node rightSubtreRoot) {
-        if (leftSubtreeRoot == null && rightSubtreRoot == null) {
+    private static boolean isSymmetric(Node leftSubtreeRoot, Node rightSubtreeRoot) {
+        if (leftSubtreeRoot == null && rightSubtreeRoot == null) {
             return true;
         }
 
-        if (isInvalidSubtree(leftSubtreeRoot, rightSubtreRoot)) {
+        if (isInvalidSubtree(leftSubtreeRoot, rightSubtreeRoot)) {
             return false;
         }
 
-        return isSymmetric(leftSubtreeRoot.right, rightSubtreRoot.left) && isSymmetric(leftSubtreeRoot.left, rightSubtreRoot.right);
+        return isSymmetric(leftSubtreeRoot.right, rightSubtreeRoot.left) && isSymmetric(leftSubtreeRoot.left, rightSubtreeRoot.right);
     }
 
     private static boolean isInvalidSubtree(Node leftSubtreeRoot, Node rightSubtreeRoot) {

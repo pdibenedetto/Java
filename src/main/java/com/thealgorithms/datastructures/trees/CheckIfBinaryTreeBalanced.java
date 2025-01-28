@@ -12,9 +12,11 @@ import java.util.Stack;
  * `isBalancedRecursive()` is implemented in a recursive fashion, and
  * `isBalancedIterative()` is implemented in an iterative fashion.
  *
- * @author [Ian Cowan](https://github.com/iccowan)
+ * @author [Ian Cowan](<a href="https://github.com/iccowan">Git-Ian Cowan</a>)
  */
-public class CheckIfBinaryTreeBalanced {
+public final class CheckIfBinaryTreeBalanced {
+    private CheckIfBinaryTreeBalanced() {
+    }
     /**
      * Recursive is BT balanced implementation
      *
